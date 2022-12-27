@@ -1,0 +1,39 @@
+.specifical {
+  display: flex;
+  padding: 0;
+  margin: 0 0 0 -30px;
+}
+.specifical__line {
+  flex-basis: calc(100% / 4 - 30px);
+  margin-left: 30px;
+}
+.specifical__icon {
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: var(--background-comand);
+  border-radius: 4px;
+}
+
+.specifical__titel {
+  margin: 0 0 10px 0;
+  padding: 0;
+
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--color-general);
+}
+.specifical__text {
+  margin: 0;
+  padding: 0;
+
+  width: 270px;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  color: var(--color-last);
+}

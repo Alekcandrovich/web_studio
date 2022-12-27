@@ -1,0 +1,37 @@
+.filter {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.filter .item + .item {
+  margin-left: 8px;
+}
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  gap: 30px;
+}
+.content.clik:hover,
+.content.clik:focus {
+  box-shadow: var(--color-comand-shadow);
+}
+.card-port {
+  border: 1px solid var(--color-border-portfolio);
+  padding: 20px 24px;
+}
+.content .titel-port {
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+
+  color: var(--color-general);
+}
+.content .text-port {
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+
+  color: var(--color-last);
+}

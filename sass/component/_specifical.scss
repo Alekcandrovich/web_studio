@@ -1,21 +1,24 @@
 .specifical {
-  display: flex;
-  padding: 0;
-  margin: 0 0 0 -30px;
+  // display: flex;
+  // padding: 0;
+  // margin: 0 0 0 -30px;
 }
 .specifical__line {
-  flex-basis: calc(100% / 4 - 30px);
-  margin-left: 30px;
+  // flex-basis: calc(100% / 4 - 30px);
+  // margin-left: 30px;
+    text-align: center;
 }
 .specifical__icon {
-  width: 270px;
-  height: 120px;
-  margin-bottom: 30px;
+  text-align: center;
+  // width: 270px;
+  // height: 120px;
+  margin: 30px 0;
   background-color: var(--background-comand);
   border-radius: 4px;
 }
 
 .specifical__titel {
+  text-align: center;
   margin: 0 0 10px 0;
   padding: 0;
 
@@ -27,10 +30,11 @@
   color: var(--color-general);
 }
 .specifical__text {
+  text-align: start;
   margin: 0;
   padding: 0;
 
-  width: 270px;
+  // width: 270px;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;

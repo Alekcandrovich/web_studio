@@ -1,6 +1,5 @@
 .logo {
-  margin-right: 93px;
-
+  padding: 16px 0;
   font-family: 'Raleway', sans-serif;
   font-size: 26px;
   line-height: 1.2;
@@ -9,10 +8,21 @@
 
   color: var(--color-link);
 }
+  .logo__up {
+  @media screen and (min-width: 768px) {
+    margin-right: 93px;
+  }
+}
 .logo__up {
+  padding: 0;
   color: var(--color-logo);
 }
 .logo__down {
   margin-right: -93px;
   color: var(--color-slogan);
+}
+.logo__nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

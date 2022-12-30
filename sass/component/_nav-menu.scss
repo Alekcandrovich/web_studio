@@ -109,6 +109,15 @@
      display: none;
 }
 }
+.nav-button .icon-close {
+  display: none;
+}
+.nav-button.is-open .icon-close {
+  display: block;
+}
+.nav-button.is-open .icon-menu {
+  display: none;
+}
 .nav-button__icon {
   width: 24px;
   height: 16px;

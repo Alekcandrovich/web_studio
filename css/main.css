@@ -230,6 +230,18 @@ img {
   }
 }
 
+.nav-button .icon-close {
+  display: none;
+}
+
+.nav-button.is-open .icon-close {
+  display: block;
+}
+
+.nav-button.is-open .icon-menu {
+  display: none;
+}
+
 .nav-button__icon {
   width: 24px;
   height: 16px;
@@ -241,7 +253,7 @@ img {
   padding: 10px 0;
 }
 
-@media screen and (min-width: 450px) {
+@media screen and (min-width: 480px) {
   .section {
     padding: 60px 0;
   }
@@ -267,9 +279,9 @@ img {
   padding-left: 15px;
   padding-right: 15px;
 }
-@media screen and (min-width: 450px) {
+@media screen and (min-width: 480px) {
   .container {
-    width: 450px;
+    width: 480px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -395,7 +407,6 @@ img {
 }
 
 .comand .fotoline {
-  padding: 0 15px;
   margin-bottom: 30px;
 }
 
@@ -468,20 +479,52 @@ img {
   color: var(--color-slogan);
 }
 
-.klient {
+@media screen and (max-width: 1199px) {
+  .client {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .client {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+}
+
+.client__posicion {
+  width: calc((100% - 30px) / 2);
+}
+@media screen and (min-width: 768px) {
+  .client__posicion {
+    width: calc((100% - 60px) / 3);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .client__posicion {
+    width: calc((100% - 150px) / 6);
+  }
+}
+
+.client__icon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  gap: 30px;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.klient__icon {
-  width: calc((100% - 60px) / 2);
+  width: 100%;
   height: 92px;
   border: 1px solid var(--color-border-klient);
   border-radius: 4px;
@@ -490,12 +533,12 @@ img {
   transition: color var(--transition-timing) var(--transition-duration), border var(--transition-timing) var(--transition-duration);
 }
 
-.icon-klient {
+.icon-client {
   fill: currentColor;
 }
 
-.klient__icon:hover,
-.klient__icon:focus {
+.client__icon:hover,
+.client__icon:focus {
   color: var(--color-link);
   border: 1px solid var(--color-link);
 }/*# sourceMappingURL=main.css.map */

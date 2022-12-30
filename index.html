@@ -47,10 +47,10 @@
           </li>
         </ul>
         <div class="nav-button__posicion">
-          <button type="button" class="nav-button">
-            <svg class="nav-button__icon">
-            <use href="./images/icons.svg#icon-menu_24"></use>
-            <use href="./images/icons.svg#icon-close_24"></use>
+          <button type="button" class="nav-button is-open" data-menu-button>
+            <svg class="nav-button__icon" aria-label="Перемикач мобильного меню">
+            <use class="icon-menu" href="./images/icons.svg#icon-menu_24"></use>
+            <use class="icon-close" href="./images/icons.svg#icon-close_24"></use>
             </svg>
           </button>
         </div>
@@ -263,34 +263,34 @@
       <section class="section">
         <div class="container">
           <h2 class="titels">Постійні клієнти</h2>
-          <ul class="klient dot">
-            <li><a href="" class="klient klient__icon">
-              <svg class="icon-klient">
+          <ul class="client dot">
+            <li class="client__posicion"><a href="" class="client__icon">
+              <svg class="icon-client">
                 <use href="./images/icons.svg#icon-client-1"></use>
               </svg></a>
             </li>
-            <li><a href="" class="klient klient__icon">
-              <svg class="icon-klient">
+            <li class="client__posicion"><a href="" class="client__icon">
+              <svg class="icon-client">
                 <use href="./images/icons.svg#icon-client-2"></use>
               </svg></a>
             </li>
-            <li><a href="" class="klient klient__icon">
-              <svg class="icon-klient">
+            <li class="client__posicion"><a href="" class="client__icon">
+              <svg class="icon-client">
                 <use href="./images/icons.svg#icon-client-3"></use>
               </svg></a>
             </li>
-            <li><a href="" class="klient klient__icon">
-              <svg class="icon-klient">
+            <li class="client__posicion"><a href="" class="client__icon">
+              <svg class="icon-client">
                 <use href="./images/icons.svg#icon-client-4"></use>
               </svg></a>
             </li>
-            <li><a href="" class="klient klient__icon">
-              <svg class="icon-klient">
+            <li class="client__posicion"><a href="" class="client__icon">
+              <svg class="icon-client">
                 <use href="./images/icons.svg#icon-client-5"></use>
               </svg></a>
             </li>
-            <li><a href="" class="klient klient__icon">
-              <svg class="icon-klient">
+            <li class="client__posicion"><a href="" class="client__icon">
+              <svg class="icon-client">
                 <use href="./images/icons.svg#icon-client-6"></use>
               </svg></a>
             </li>  
@@ -400,6 +400,7 @@
           </form>
       </div>
     </div>
-    <script src="./js/modal.js"></script>  
+    <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

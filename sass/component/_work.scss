@@ -1,6 +1,6 @@
-.work {
-    @media screen and {
-        
+.work__section {
+  @media screen and (max-width: 767px) {
+        display: none;
     }
 }
 .work {

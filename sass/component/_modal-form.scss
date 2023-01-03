@@ -114,29 +114,3 @@
 .checkbox {
   appearance: none;
 }
-.button-form {
-  align-items: center;
-  justify-content: center;
-  padding: 10px 52px;
-  cursor: pointer;
-  border: none;
-
-  background-color: var(--color-link);
-  color: var(--color-label);  
-  box-shadow: var(--color-shadow-order);
-  border-radius: 4px;
-
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
-  letter-spacing: 0.06em;
-
-  transition: background-color var(--transition-timing) var(--transition-duration);
-}
-.button-form:hover,
-.button-form:focus {
-  background-color: var(--color-button-activ);
-}
-.button-form-posicion {
-  text-align: center;
-}

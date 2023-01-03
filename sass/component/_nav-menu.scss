@@ -55,9 +55,14 @@
   background-color: var(--color-link);
 }
 .contact {
-  // margin-left: 70px;
-
-
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
+}
+.contact-devices {
+  display: flex;
+  margin-left: auto;
+  align-items: center;
 }
 .contact__icon.mailto {
   padding: 21px 0 5px 0;
@@ -65,9 +70,12 @@
   font-weight: 500;
   font-size: 12px;
   line-height: 1.17;
-  // font-size: 14px;
-  // line-height: 1.14;
   letter-spacing: 0.02em;
+  @media screen and (min-width: 1200px) {
+    padding: 32px 0;
+    font-size: 14px;
+    line-height: 1.14;
+  }
 
   transition: color var(--transition-timing) var(--transition-duration);
 
@@ -83,10 +91,13 @@
   font-weight: 500;
   font-size: 12px;
   line-height: 1.17;
-  // font-size: 14px;
-  // line-height: 1.14;
   letter-spacing: 0.02em;
-
+  @media screen and (min-width: 1200px) {
+    padding: 32px 0;
+    font-size: 14px;
+    line-height: 1.14;
+    margin-left: 40px;
+  }
   transition: color var(--transition-timing) var(--transition-duration);
 
   color: var(--color-general);
@@ -142,6 +153,9 @@
 .nav-button__posicion {
   margin-left: auto;
   padding: 10px 0;
+  @media screen and (min-width: 768px ) {
+    display: none;
+  }
 }
 .menu-container {
   display: none;

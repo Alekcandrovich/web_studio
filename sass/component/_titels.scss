@@ -8,4 +8,8 @@
   letter-spacing: 0.03em;
 
   color: var(--color-general);
+
+  @media screen and (min-width: 1200px) {
+  margin: 0 0 50px 0;
+}
 }

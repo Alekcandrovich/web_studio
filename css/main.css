@@ -542,6 +542,11 @@ img {
   letter-spacing: 0.03em;
   color: var(--color-general);
 }
+@media screen and (min-width: 1200px) {
+  .titels {
+    margin: 0 0 50px 0;
+  }
+}
 
 @media screen and (max-width: 1199px) {
   .work__section {
@@ -855,7 +860,7 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .footer-contact {
-    margin-right: 70px;
+    margin-right: 94px;
   }
 }
 
@@ -1087,7 +1092,6 @@ img {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 450px;
-  text-align: center;
 }
 @media screen and (min-width: 1200px) {
   .mailing {

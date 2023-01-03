@@ -54,6 +54,9 @@
   border-radius: 2px;
   background-color: var(--color-link);
 }
+.menu-devices {
+  
+}
 .contact {
   @media screen and (min-width: 1200px) {
     display: flex;
@@ -108,8 +111,6 @@
 }
 .contact__icon {
   display: flex;
-  // align-items: center;
-  //     display: flex;
   margin-left: auto;
   align-items: center;
 }

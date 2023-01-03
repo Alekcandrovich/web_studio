@@ -55,75 +55,107 @@
   background-color: var(--color-link);
 }
 .contact {
-  margin-left: auto;
-  align-items: center;
+  // margin-left: 70px;
+
+
 }
-.contact__mailto {
+.contact__icon.mailto {
   padding: 21px 0 5px 0;
   text-decoration: none;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+  font-size: 12px;
+  line-height: 1.17;
+  // font-size: 14px;
+  // line-height: 1.14;
   letter-spacing: 0.02em;
 
   transition: color var(--transition-timing) var(--transition-duration);
 
   color: var(--color-general);
 }
-.contact__mailto:hover,
-.contact__mailto:focus {
+.contact__icon.mailto:hover,
+.contact__icon.mailto:focus {
   color: var(--color-link);
 }
-.contact__tel {
+.contact__icon.tel {
   padding: 5px 0 21px 0;
   text-decoration: none;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+  font-size: 12px;
+  line-height: 1.17;
+  // font-size: 14px;
+  // line-height: 1.14;
   letter-spacing: 0.02em;
 
   transition: color var(--transition-timing) var(--transition-duration);
 
   color: var(--color-general);
 }
-.contact__tel:hover,
-.contact__tel:focus {
+.contact__icon.tel:hover,
+.contact__icon.tel:focus {
   color: var(--color-link);
 }
 .contact__icon {
   display: flex;
   // align-items: center;
+  //     display: flex;
+  margin-left: auto;
+  align-items: center;
 }
 .nav-button {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 12px 8px;
   cursor: pointer;
   border: none;
-  width: 40px;
-  height: 40px;
   background-color: transparent;
 
   @media screen and (min-width: 768px) {
      display: none;
 }
 }
-.nav-button .icon-close {
+.nav-button .icon-menu {
   display: none;
 }
-.nav-button.is-open .icon-close {
+.nav-button.is-open .icon-menu {
   display: block;
 }
-.nav-button.is-open .icon-menu {
+.nav-button.is-open .icon-close {
   display: none;
 }
 .nav-button__icon {
-  width: 24px;
-  height: 16px;
+  width: 40px;
+  height: 40px;
   fill: currentColor;
+
+  transition: color var(--transition-timing) var(--transition-duration),
+              border var(--transition-timing) var(--transition-duration); 
+}
+.nav-button__icon:hover,
+.nav-button__icon:focus {
+  color: var(--color-link);
+}
+.icon-menu {
+  width: 40px;
+  height: 40px;
 }
 .nav-button__posicion {
   margin-left: auto;
   padding: 10px 0;
+}
+.menu-container {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+
+  background-color: aqua;
+  padding: 20px;
+  text-align: center;
+  font-size: 20px;
+
+&.is-open {
+    display: block;
+  }
 }

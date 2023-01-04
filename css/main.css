@@ -66,7 +66,7 @@ img {
   color: var(--color-link);
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .logo__up {
     margin-right: 93px;
   }
@@ -117,6 +117,11 @@ img {
   margin-left: 50px;
 }
 
+.nav__menu {
+  padding-bottom: 32px;
+  margin-left: 40px;
+}
+
 .envelope {
   width: 16px;
   height: 12px;
@@ -132,15 +137,25 @@ img {
 }
 
 .nav__link {
-  padding: 32px 0;
+  text-align: start;
   text-decoration: none;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+  font-size: 40px;
+  line-height: 1.175;
   letter-spacing: 0.02em;
   -webkit-transition: color var(--transition-timing) var(--transition-duration);
   transition: color var(--transition-timing) var(--transition-duration);
   color: var(--color-general);
+}
+@media screen and (min-width: 768px) {
+  .nav__link {
+    padding: 32px 0;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+  }
 }
 
 .nav__link:hover,
@@ -153,16 +168,18 @@ img {
   color: var(--color-link);
 }
 
-.nav__link--current::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  display: block;
-  width: 100%;
-  height: 4px;
-  border-radius: 2px;
-  background-color: var(--color-link);
+@media screen and (min-width: 768px) {
+  .nav__link--current::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--color-link);
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -173,7 +190,7 @@ img {
   }
 }
 
-.contact-devices {
+.contact-posicion {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -184,15 +201,29 @@ img {
 }
 
 .contact__icon.mailto {
-  padding: 21px 0 5px 0;
+  padding: 32px 0 0 0;
+  margin-left: 40px;
   text-decoration: none;
+  cursor: auto;
   font-weight: 500;
-  font-size: 12px;
+  font-size: 24px;
   line-height: 1.17;
   letter-spacing: 0.02em;
-  -webkit-transition: color var(--transition-timing) var(--transition-duration);
-  transition: color var(--transition-timing) var(--transition-duration);
   color: var(--color-general);
+}
+@media screen and (min-width: 768px) {
+  .contact__icon.mailto {
+    padding: 21px 0 5px 0;
+    font-size: 12px;
+    line-height: 1.17;
+    margin: 0;
+    -webkit-transition: color var(--transition-timing) var(--transition-duration);
+    transition: color var(--transition-timing) var(--transition-duration);
+  }
+  .contact__icon.mailto .contact__icon.mailto:hover,
+.contact__icon.mailto .contact__icon.mailto:focus {
+    color: var(--color-link);
+  }
 }
 @media screen and (min-width: 1200px) {
   .contact__icon.mailto {
@@ -202,21 +233,31 @@ img {
   }
 }
 
-.contact__icon.mailto:hover,
-.contact__icon.mailto:focus {
+.contact__icon.tel {
+  padding: 274px 0 0 0;
+  margin-left: 40px;
+  text-decoration: none;
+  cursor: auto;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
   color: var(--color-link);
 }
-
-.contact__icon.tel {
-  padding: 5px 0 21px 0;
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.02em;
-  -webkit-transition: color var(--transition-timing) var(--transition-duration);
-  transition: color var(--transition-timing) var(--transition-duration);
-  color: var(--color-general);
+@media screen and (min-width: 768px) {
+  .contact__icon.tel {
+    padding: 5px 0 21px 0;
+    font-size: 12px;
+    line-height: 1.17;
+    margin: 0;
+    color: var(--color-general);
+    -webkit-transition: color var(--transition-timing) var(--transition-duration);
+    transition: color var(--transition-timing) var(--transition-duration);
+  }
+  .contact__icon.tel .contact__icon.tel:hover,
+.contact__icon.tel .contact__icon.tel:focus {
+    color: var(--color-link);
+  }
 }
 @media screen and (min-width: 1200px) {
   .contact__icon.tel {
@@ -225,11 +266,6 @@ img {
     line-height: 1.14;
     margin-left: 40px;
   }
-}
-
-.contact__icon.tel:hover,
-.contact__icon.tel:focus {
-  color: var(--color-link);
 }
 
 .contact__icon {
@@ -308,13 +344,37 @@ img {
   top: 100%;
   left: 0;
   width: 100%;
-  background-color: aqua;
-  padding: 20px;
-  text-align: center;
-  font-size: 20px;
+  background-color: var(--background-general);
 }
 .menu-container.is-open {
   display: block;
+}
+
+.menu__network {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 30px;
+  margin-right: 40px;
+  padding: 64px 0 48px 0;
+}
+
+.menu__social {
+  padding: 0 10px 0px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: var(--color-link);
+}
+
+.menu__span {
+  padding: 10px;
+  width: 22px;
+  height: 0px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
 }
 
 @media screen and (min-width: 480px) {
@@ -839,6 +899,13 @@ img {
   color: var(--color-link);
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .social-contact {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
 @media screen and (min-width: 1200px) {
   .social-contact {
     display: -webkit-box;
@@ -862,10 +929,6 @@ img {
   .footer-contact {
     margin-right: 94px;
   }
-}
-
-.social-compound {
-  padding-top: 12px;
 }
 
 .compound {

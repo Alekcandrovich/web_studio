@@ -147,26 +147,39 @@
             <ul class="work dot">
               <li class="work__item">
                 <div class="label-thumb">
-                  <img src="./images/jpg-1.jpg" alt="Десктопні додатки" width="370" />
-                    <div class="label">
-                      <p class="label__text">Десктопні додатки</p>
-                    </div>
+                  <img class="fotoline" srcset="
+                       ./images/works-desctop.jpg 370w,
+                       ./images/works-desctop-2x.jpg 740w"
+                       sizes="370px"
+                       src="./images/works-desctop.jpg" alt="Десктопні додатки" />
+                <div class="label">
+                  <p class="label__text">Десктопні додатки</p>
+                </div>
                 </div>
               </li>
               <li class="work__item">
                 <div class="label-thumb">
-                  <img src="./images/jpg-2.jpg" alt="Мобільні додатки" width="370" />
-                    <div class="label">
-                      <p class="label__text">Мобільні додатки</p>
-                    </div>
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="
+                    ./images/works-mobile.jpg 1x,
+                    ./images/works-mobile-2x.jpg 2x"
+                    type="image/jpg" />
+                    <img class="fotoline" src="./images/works-mobile.jpg" alt="Мобільні додатки" />
+                  </picture>
+                <div class="label">
+                  <p class="label__text">Мобільні додатки</p>
+                </div>
                 </div>
               </li>
               <li class="work__item">
                 <div class="label-thumb">
-                  <img src="./images/jpg-3.jpg" alt="Дизайнерські рішення" width="370" />
-                    <div class="label">
-                      <p class="label__text">Дизайнерські рішення</p>
-                    </div>
+                  <img class="fotoline" srcset="
+                       ./images/works-design.jpg 370w,
+                       ./images/works-design-2x.jpg 740w"
+                       sizes="370px" src="./images/works-dwstop.jpg" alt="Дизайнерські рішення" />
+                <div class="label">
+                  <p class="label__text">Дизайнерські рішення</p>
+                </div>
                 </div> 
               </li>
             </ul>
@@ -178,16 +191,15 @@
           <h2 class="titels">Наша команда</h2>
           <ul class="comand dot">
             <li class="foto">
-              <img class="fotoline"
-              srcset="./images/igor270.jpg  270w
-                      ./images/igor354.jpg  354w
-                      ./images/igor450.jpg  450w
-                      ./images/igor270-2x.jpg  270w
-                      ./images/igor354-2x.jpg  354w
-                      ./images/igor450-2x.jpg  450w"
-
-              src="./images/igor270.jpg" alt="Ігор Дем'яненко"
-              sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw" />
+            <img class="fotoline"
+                 srcset="./images/igor270.jpg 270w,
+                         ./images/igor270-2x.jpg 540w,
+                         ./images/igor354.jpg 354w,
+                         ./images/igor354-2x.jpg 768w,
+                         ./images/igor450.jpg 450w,
+                         ./images/igor450-2x.jpg 900w"
+                 sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, 450px"
+                 src="./images/igor270.jpg" alt="Ігор Дем'яненко" />
               <h3 class="name">Ігор Дем'яненко</h3>
               <p class="proff">Product Designer</p>
                 <ul class="social-card dot">
@@ -215,7 +227,21 @@
                 </ul>
             </li>
             <li class="foto">
-              <img class="fotoline" src="./images/jpg-5.jpg" alt="Ольга Рєпіна" width="270" />
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="
+                  ./images/olga270.jpg 1x,
+                  ./images/olga270-2x.jpg 2x"
+                  type="image/jpg" />
+                  <source media="(min-width: 768px)" srcset="
+                  ./images/olga354.jpg 1x,
+                  ./images/olga354-2x.jpg 2x"
+                  type="image/jpg" />
+                  <source media="(max-width: 767px)" srcset="
+                  ./images/olga450.jpg 1x,
+                  ./images/olga450-2x.jpg 2x"
+                  type="image/jpg" />
+                  <img class="fotoline" src="./images/olga270.jpg" alt="Ольга Рєпіна" />
+                </picture>
               <h3 class="name">Ольга Рєпіна</h3>
               <p class="proff">Frontend Developer</p>
                 <ul class="social-card dot">
@@ -243,7 +269,15 @@
                 </ul>
             </li>
             <li class="foto">
-              <img class="fotoline" src="./images/jpg-6.jpg" alt="Микола Тарасов" width="270" />
+            <img class="fotoline" 
+                 srcset="./images/mikola270.jpg 270w,
+                         ./images/mikola270-2x.jpg 540w,
+                         ./images/mikola354.jpg 354w,
+                         ./images/mikola354-2x.jpg 768w,
+                         ./images/mikola450.jpg 450w,
+                         ./images/mikola450-2x.jpg 900w"
+                 sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, 450px"
+                 src="./images/mikola270.jpg" alt="Микола Тарасов" />
               <h3 class="name">Микола Тарасов</h3>
               <p class="proff">Marketing</p>
                 <ul class="social-card dot">
@@ -271,7 +305,21 @@
                 </ul>
             </li>
             <li class="foto" >
-              <img class="fotoline" src="./images/jpg-7.jpg" alt="Михайло Єрмаков" width="270" />
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="
+                  ./images/mihail270.jpg 1x,
+                  ./images/mihail270-2x.jpg 2x"
+                  type="image/jpg" />
+                  <source media="(min-width: 768px)" srcset="
+                  ./images/mihail354.jpg 1x,
+                  ./images/mihail354-2x.jpg 2x"
+                  type="image/jpg" />
+                  <source media="(max-width: 767px)" srcset="
+                  ./images/mihail450.jpg 1x,
+                  ./images/mihail450-2x.jpg 2x"
+                  type="image/jpg" />
+                  <img class="fotoline" src="./images/mihail270.jpg" alt="Михайло Єрмаков" />
+                </picture>
               <h3 class="name">Михайло Єрмаков</h3>
               <p class="proff">UI Designer</p>
                 <ul class="social-card dot">

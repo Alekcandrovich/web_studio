@@ -87,26 +87,30 @@
   font-size: 24px;
   line-height: 1.17;
   letter-spacing: 0.02em;
+  color: var(--color-general);
+
+  transition: color var(--transition-timing) var(--transition-duration);
 
   @media screen and (min-width: 768px) {
   padding: 21px 0 5px 0;
   font-size: 12px;
   line-height: 1.17;
   margin: 0;
+  cursor: pointer;
+}  
 
-  transition: color var(--transition-timing) var(--transition-duration);
-.contact__icon.mailto:hover,
-.contact__icon.mailto:focus {
-  color: var(--color-link);
-}
-  }  
   @media screen and (min-width: 1200px) {
   padding: 32px 0;
   font-size: 14px;
   line-height: 1.14;
-  }
-  color: var(--color-general);
 }
+}
+.contact__icon.mailto:hover,
+.contact__icon.mailto:focus {
+  @media screen and (min-width: 768px) {
+  color: var(--color-link);
+}  
+}  
 
 .contact__icon.tel {
   padding: 274px 0 0 0;
@@ -118,20 +122,15 @@
   line-height: 1.18;
   letter-spacing: 0.02em;
   color: var(--color-link);
+  transition: color var(--transition-timing) var(--transition-duration);
   
   @media screen and (min-width: 768px) {
   padding: 5px 0 21px 0;
   font-size: 12px;
   line-height: 1.17;
   margin: 0;
+  cursor: pointer;
   color: var(--color-general);
-  
-  transition: color var(--transition-timing) var(--transition-duration);
-
-.contact__icon.tel:hover,
-.contact__icon.tel:focus {
-  color: var(--color-link);
-}
   }
 
   @media screen and (min-width: 1200px) {
@@ -141,12 +140,12 @@
   margin-left: 40px;
   }
 }
-//   transition: color var(--transition-timing) var(--transition-duration);
-// }
-// .contact__icon.tel:hover,
-// .contact__icon.tel:focus {
-//   color: var(--color-link);
-// }
+.contact__icon.tel:hover,
+.contact__icon.tel:focus {
+  @media screen and (min-width: 768px) {
+  color: var(--color-link);
+  }
+}
 .contact__icon {
   display: flex;
   margin-left: auto;
@@ -228,6 +227,6 @@
   width: 22px;
   height: 0px;
 
-  border: 1px solid rgba(33, 33, 33, 0.2);
+  border: 1px solid var(--color-border-form);
   transform: rotate(90deg);
 }

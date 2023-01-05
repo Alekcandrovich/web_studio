@@ -210,6 +210,8 @@ img {
   line-height: 1.17;
   letter-spacing: 0.02em;
   color: var(--color-general);
+  -webkit-transition: color var(--transition-timing) var(--transition-duration);
+  transition: color var(--transition-timing) var(--transition-duration);
 }
 @media screen and (min-width: 768px) {
   .contact__icon.mailto {
@@ -217,12 +219,7 @@ img {
     font-size: 12px;
     line-height: 1.17;
     margin: 0;
-    -webkit-transition: color var(--transition-timing) var(--transition-duration);
-    transition: color var(--transition-timing) var(--transition-duration);
-  }
-  .contact__icon.mailto .contact__icon.mailto:hover,
-.contact__icon.mailto .contact__icon.mailto:focus {
-    color: var(--color-link);
+    cursor: pointer;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -230,6 +227,13 @@ img {
     padding: 32px 0;
     font-size: 14px;
     line-height: 1.14;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contact__icon.mailto:hover,
+.contact__icon.mailto:focus {
+    color: var(--color-link);
   }
 }
 
@@ -243,6 +247,8 @@ img {
   line-height: 1.18;
   letter-spacing: 0.02em;
   color: var(--color-link);
+  -webkit-transition: color var(--transition-timing) var(--transition-duration);
+  transition: color var(--transition-timing) var(--transition-duration);
 }
 @media screen and (min-width: 768px) {
   .contact__icon.tel {
@@ -250,13 +256,8 @@ img {
     font-size: 12px;
     line-height: 1.17;
     margin: 0;
+    cursor: pointer;
     color: var(--color-general);
-    -webkit-transition: color var(--transition-timing) var(--transition-duration);
-    transition: color var(--transition-timing) var(--transition-duration);
-  }
-  .contact__icon.tel .contact__icon.tel:hover,
-.contact__icon.tel .contact__icon.tel:focus {
-    color: var(--color-link);
   }
 }
 @media screen and (min-width: 1200px) {
@@ -265,6 +266,13 @@ img {
     font-size: 14px;
     line-height: 1.14;
     margin-left: 40px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contact__icon.tel:hover,
+.contact__icon.tel:focus {
+    color: var(--color-link);
   }
 }
 
@@ -372,20 +380,13 @@ img {
   padding: 10px;
   width: 22px;
   height: 0px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
+  border: 1px solid var(--color-border-form);
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
 }
 
-@media screen and (min-width: 480px) {
-  .section {
-    padding: 60px 0;
-  }
-}
-@media screen and (min-width: 768px) {
-  .section {
-    padding: 60px 0;
-  }
+.section {
+  padding: 60px 0;
 }
 @media screen and (min-width: 1200px) {
   .section {

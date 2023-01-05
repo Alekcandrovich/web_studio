@@ -421,29 +421,73 @@ img {
 }
 
 .slogan {
-  height: 600px;
-  max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
   background-color: var(--background-slogan);
-  background-image: -webkit-gradient(linear, left top, right top, from(var(--background-slogan-gradient)), to(var(--background-slogan-gradient))), url(../images/jpg-0.jpg);
-  background-image: linear-gradient(to right, var(--background-slogan-gradient), var(--background-slogan-gradient)), url(../images/jpg-0.jpg);
+  background-image: -webkit-gradient(linear, left top, right top, from(var(--background-slogan-gradient)), to(var(--background-slogan-gradient)));
+  background-image: linear-gradient(to right, var(--background-slogan-gradient), var(--background-slogan-gradient));
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  padding: 200px 0 200px 0;
+  padding: 118px 0;
   text-align: center;
+  max-width: 480px;
+  height: 400px;
+  background-image: url("../images/header450.jpg");
+  background-size: cover;
+  background-size: 480px 400px;
+}
+@media screen and (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .slogan {
+    background-image: url("../images/header450-2x.jpg");
+  }
+}
+@media screen and (min-width: 768px) {
+  .slogan {
+    max-width: 768px;
+    height: 400px;
+    background-image: url("../images/header768.jpg");
+    background-size: cover;
+    background-size: 768px 400px;
+  }
+}
+@media screen and (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .slogan {
+    background-image: url("../images/header768-2x.jpg");
+  }
+}
+@media screen and (min-width: 1200px) {
+  .slogan {
+    padding: 200px 0 200px 0;
+    max-width: 1600px;
+    height: 600px;
+    background-image: url("../images/header1600.jpg");
+    background-size: cover;
+    background-size: 1600px 600px;
+  }
+}
+@media screen and (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .slogan {
+    background-image: url("../images/header1600-2x.jpg");
+  }
 }
 
 .slogan__titel {
   margin: 0 0 30px 0;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.62;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--color-slogan);
+}
+@media screen and (min-width: 1200px) {
+  .slogan__titel {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 
 .slogan__button {
@@ -1162,7 +1206,12 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 450px;
+  max-width: 450px;
+}
+@media screen and (min-width: 768px) {
+  .mailing {
+    width: 450px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .mailing {

@@ -55,12 +55,9 @@
   border: 1px solid var(--color-border-form);
   border-radius: 4px;
   outline: none;
-  width: 370px;
+  width: 100%;
   height: 120px;
   resize: none;
-     @media screen and (min-width: 1200px) {
-        width: 448px;
-    }
 }
 .textarea::placeholder {
   color: var(--color-form-placeholder);

@@ -51,9 +51,9 @@
           </ul>
         </div>
 <!-- menu__button-->
-        <div class="button-menu-open__posicion">
-          <button type="button" class="button-menu-open js-open-menu">
-            <svg class="button-menu-open__icon">
+        <div class="menu-toggle__posicion">
+          <button type="button" class="menu-toggle js-open-menu" aria-expanded="false">
+            <svg class="menu-toggle__icon" aria-label="кнопка вiдкриття мобiльного меню">
               <use class="icon-menu" href="./images/icons.svg#icon-menu_40"></use>
             </svg>
           </button>
@@ -68,8 +68,8 @@
             </svg>
           </button> -->
         </div>
-        <div class="menu-container" id="menu-container" data-menu>
-          <div class="menu-devices">
+        <div class="menu-container js-menu-container" id="menu-container">
+          <div class="menu-toggle js-close-menu">
             <ul class="dot">
               <li class="nav__menu"><a href="./index.html" class="nav__link nav__link--current">Студія</a></li>
               <li class="nav__menu"><a href="./portfolio.html" class="nav__link">Портфоліо</a></li>
@@ -499,5 +499,6 @@
     </div>
     <script src="./js/modal.js"></script>
     <script src="./js/menu.js"></script>
+    <script>src="./js/mobile-menu.js"</script>
   </body>
 </html>

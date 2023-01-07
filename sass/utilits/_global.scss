@@ -6,6 +6,10 @@ body {
   color: var(--color-general);
 }
 
+body.modal-open {
+  overflow: hidden;
+}
+
 img {
   display: block;
   width: 100%;

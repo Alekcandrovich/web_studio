@@ -356,7 +356,6 @@ img {
   top: 0;
   left: 0;
   width: 100%;
-  overflow-y: none;
   background-color: var(--background-general);
 }
 .menu-container.is-open {

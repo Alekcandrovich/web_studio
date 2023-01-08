@@ -121,8 +121,7 @@ img {
 }
 
 .nav__menu {
-  padding-bottom: 32px;
-  margin-left: 40px;
+  margin: 48px 0 -16px 40px;
 }
 
 .envelope {
@@ -241,7 +240,7 @@ img {
 }
 
 .contact__icon.tel {
-  padding: 274px 0 0 0;
+  padding: 174px 0 0 0;
   margin-left: 40px;
   text-decoration: none;
   cursor: auto;
@@ -307,16 +306,34 @@ img {
   }
 }
 
-.menu-toggle__icon {
+.menu-icon__menu {
   width: 40px;
   height: 40px;
   fill: currentColor;
+  margin-left: auto;
   -webkit-transition: color var(--transition-timing) var(--transition-duration), border var(--transition-timing) var(--transition-duration);
   transition: color var(--transition-timing) var(--transition-duration), border var(--transition-timing) var(--transition-duration);
 }
 
-.menu-toggle__icon:hover,
-.menu-toggle__icon:focus {
+.menu-icon__menu:hover,
+.menu-icon__menu:focus {
+  color: var(--color-link);
+}
+
+.menu-icon__close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  width: 40px;
+  height: 40px;
+  fill: currentColor;
+  margin-left: auto;
+  -webkit-transition: color var(--transition-timing) var(--transition-duration), border var(--transition-timing) var(--transition-duration);
+  transition: color var(--transition-timing) var(--transition-duration), border var(--transition-timing) var(--transition-duration);
+}
+
+.menu-icon__close:hover,
+.menu-icon__close:focus {
   color: var(--color-link);
 }
 
@@ -344,9 +361,6 @@ img {
   background-color: var(--background-general);
 }
 .menu-container.is-open {
-  display: block;
-}
-.menu-container .js-open-menu {
   display: block;
 }
 

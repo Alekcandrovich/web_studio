@@ -600,7 +600,8 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .specifical {
-    margin: 0 0 0 -30px;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
   }
 }
 

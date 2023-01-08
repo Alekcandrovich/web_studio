@@ -598,6 +598,12 @@ img {
     margin: 0 0 0 -30px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .specifical {
+    margin: 0 0 0 -30px;
+  }
+}
+
 .specifical__line {
   text-align: center;
 }
@@ -612,7 +618,6 @@ img {
   .specifical__line {
     -ms-flex-preferred-size: calc(25% - 30px);
         flex-basis: calc(25% - 30px);
-    margin-left: 30px;
   }
 }
 

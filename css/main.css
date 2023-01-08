@@ -310,18 +310,6 @@ img {
   }
 }
 
-.menu-toggle .icon-menu {
-  display: none;
-}
-
-.menu-toggle.is-open .icon-menu {
-  display: block;
-}
-
-.menu-toggle.is-open .icon-close {
-  display: none;
-}
-
 .menu-toggle__icon {
   width: 40px;
   height: 40px;

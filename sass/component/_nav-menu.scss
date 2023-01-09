@@ -204,19 +204,19 @@
   }
 }
 .menu-container {
-  transform: scale(1);
+  transform: translateY(100%);
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   background-color: var(--background-general);
+  
+  transition: transform var(--transition-timing) var(--transition-duration);
 
 &.is-open {
   display: block;
-  transform: scale(0);
-
-   transition: transform var(--transition-timing) var(--transition-duration);
+  transform: translateY(0);
 }
 }
 .menu__network {

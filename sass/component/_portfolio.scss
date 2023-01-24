@@ -1,7 +1,6 @@
 .filter {
   display: flex;
   flex-wrap: wrap;
-  // margin-bottom: 40px;
 
   @media screen and (min-width: 768px) {
     justify-content: center;
@@ -22,15 +21,26 @@
   padding: 0;
   gap: 30px;
   
-   @media screen and (min-width: 768px) {
-      flex-basis: calc((100% - 30px) / 2);
+//    @media screen and (min-width: 768px) {
+//       flex-basis: calc((100% - 30px) / 2);
+// }
+//    @media screen and (min-width: 1200px) {
+//       flex-basis: calc((100% - 90px) / 3);
+// }  
 }
-   @media screen and (min-width: 1200px) {
-      flex-basis: calc((100% - 90px) / 3);
-}  
-}
-.content.clik:hover,
-.content.clik:focus {
+// .content__clik {
+// //    @media screen and (min-width: 768px) {
+// //       flex-basis: calc((100% - 30px) / 2);
+// // }  
+// //    @media screen and (min-width: 1200px) {
+// //       flex-basis: calc((100% - 90px) / 3);
+   
+// //   // display: flex;
+// //   // flex-wrap: wrap;
+// // }
+// }
+.content__clik:hover,
+.content__clik:focus {
   box-shadow: var(--color-comand-shadow);
 }
 .card-port {

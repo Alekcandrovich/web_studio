@@ -1121,21 +1121,9 @@ img {
   padding: 0;
   gap: 30px;
 }
-@media screen and (min-width: 768px) {
-  .content {
-    -ms-flex-preferred-size: calc((100% - 30px) / 2);
-        flex-basis: calc((100% - 30px) / 2);
-  }
-}
-@media screen and (min-width: 1200px) {
-  .content {
-    -ms-flex-preferred-size: calc((100% - 90px) / 3);
-        flex-basis: calc((100% - 90px) / 3);
-  }
-}
 
-.content.clik:hover,
-.content.clik:focus {
+.content__clik:hover,
+.content__clik:focus {
   -webkit-box-shadow: var(--color-comand-shadow);
           box-shadow: var(--color-comand-shadow);
 }

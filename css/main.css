@@ -1135,7 +1135,7 @@ img {
           box-shadow: var(--color-comand-shadow);
 }
 
-.card-port {
+.flex-grow {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1143,6 +1143,9 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.card-port {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;

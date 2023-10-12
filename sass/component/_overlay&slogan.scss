@@ -10,14 +10,10 @@
   text-align: center;
 
 @media screen and (max-width: 767px) {
-  // max-width: 480px;
-  // height: 400px;
   background-image: linear-gradient(to right,
       var(--background-slogan-gradient),
       var(--background-slogan-gradient)),
       url("../images/header450.jpg");
-  // background-size: cover;
-  // background-size: 480px 400px;
 }
 
 @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
@@ -30,14 +26,10 @@
   }
 
 @media screen and (min-width: 768px) {
-  // max-width: 768px;
-  // height: 400px;
   background-image: linear-gradient(to right,
       var(--background-slogan-gradient),
       var(--background-slogan-gradient)),
       url("../images/header768.jpg");
-  // background-size: cover;
-  // background-size: 768px 400px;
 }
   
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
@@ -50,15 +42,11 @@
 }
 
 @media screen and (min-width: 1200px) {
-  // max-width: 1600px;
-  // height: 600px;
   padding: 200px 0 200px 0;
   background-image: linear-gradient(to right,
       var(--background-slogan-gradient),
       var(--background-slogan-gradient)),
       url("../images/header1600.jpg");
-  // background-size: cover;
-  // background-size: 1600px 600px;
 }
   
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),

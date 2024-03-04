@@ -1,24 +1,26 @@
 .specifical {
- @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
     padding: 0;
     margin: 0 0 0 -30px;
- }
- @media screen and (min-width: 1200px) {
-   flex-wrap: nowrap;
- }
+  }
+  @media screen and (min-width: 1200px) {
+    flex-wrap: nowrap;
+  }
 }
+
 .specifical__line {
-   @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) {
     flex-basis: calc(100% / 2 - 30px);
-    margin-left: 30px; 
- }
-    @media screen and (min-width: 1200px) {
+    margin-left: 30px;
+  }
+  @media screen and (min-width: 1200px) {
     flex-basis: calc(100% / 4 - 30px);
- }
-    text-align: center;
+  }
+  text-align: center;
 }
+
 .specifical__icon {
   text-align: center;
   margin-bottom: 30px;
@@ -39,6 +41,7 @@
 
   color: var(--color-general);
 }
+
 .specifical__text {
   text-align: start;
   margin: 0;

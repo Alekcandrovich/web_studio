@@ -10,6 +10,7 @@
     margin-bottom: 50px;
   }
 }
+
 .filter .item + .item {
   margin-left: 8px;
 }
@@ -21,15 +22,18 @@
   padding: 0;
   gap: 30px;
 }
+
 .content__clik {
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     flex-basis: calc((100% - 30px) / 2);
   }
 }
+
 .content__clik:hover,
 .content__clik:focus {
   box-shadow: var(--color-comand-shadow);
 }
+
 .card-port {
   display: flex;
   flex-direction: column;
@@ -37,6 +41,7 @@
   border: 1px solid var(--color-border-portfolio);
   padding: 20px 24px;
 }
+
 .content .titel-port {
   margin: 0;
   font-size: 18px;
@@ -45,6 +50,7 @@
 
   color: var(--color-general);
 }
+
 .content .text-port {
   margin: 0;
   font-size: 16px;

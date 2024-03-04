@@ -1,10 +1,12 @@
 .overlay-action {
-  text-decoration: none; 
+  text-decoration: none;
 }
+
 .overlay-thumb {
   position: relative;
   overflow: hidden;
 }
+
 .overlay-text {
   position: absolute;
   opacity: 0;
@@ -26,6 +28,7 @@
   text-decoration: none;
   color: var(--color-label);
 }
+
 .overlay-action:hover .overlay-text,
 .overlay-action:focus .overlay-text {
   opacity: 1;

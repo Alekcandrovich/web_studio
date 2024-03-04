@@ -12,7 +12,7 @@
   font-weight: 700;
   line-height: 1.15;
   letter-spacing: 0.03em;
-  
+
   color: var(--color-general);
 }
 .form-field {
@@ -62,7 +62,7 @@
 .textarea::placeholder {
   color: var(--color-form-placeholder);
 }
-.textarea:not( :placeholder-shown),
+.textarea:not(:placeholder-shown),
 .textarea:focus {
   border: 1px solid var(--color-link);
 }
@@ -94,9 +94,9 @@
   line-height: 1.7;
   letter-spacing: 0.03em;
   color: var(--color-last);
-   @media screen and (max-width: 1200px) {
-        font-size: 12px;
-    }
+  @media screen and (max-width: 1200px) {
+    font-size: 12px;
+  }
 }
 .contrakt-rules {
   font-weight: 400;
@@ -104,9 +104,9 @@
   line-height: 1.7;
   letter-spacing: 0.03em;
   color: var(--color-link);
-   @media screen and (max-width: 1200px) {
-        font-size: 12px;
-    }
+  @media screen and (max-width: 1200px) {
+    font-size: 12px;
+  }
 }
 .checkbox {
   appearance: none;

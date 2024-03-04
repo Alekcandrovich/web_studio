@@ -9,13 +9,14 @@
 
   background-color: var(--color-backdrop);
   transition: opacity var(--transition-timing) var(--transition-duration),
-              visibility var(--transition-timing) var(--transition-duration);
+    visibility var(--transition-timing) var(--transition-duration);
 }
 .backdrop.is-hidden {
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
 }
+
 .modal {
   position: absolute;
   top: 50%;
@@ -33,22 +34,25 @@
 
   transition: transform var(--transition-timing) var(--transition-duration);
 
-      @media screen and (max-width: 1200px) {
-        max-width: 450px;
-        max-height: 609px;
-    }
+  @media screen and (max-width: 1200px) {
+    max-width: 450px;
+    max-height: 609px;
+  }
 }
+
 .backdrop.is-hidden .modal {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(0);
 }
+
 .close-posicion {
   position: absolute;
   top: 8px;
   right: 8px;
 }
+
 .close-modal {
   display: flex;
   justify-content: center;
@@ -67,13 +71,15 @@
 
   transition: color var(--transition-timing) var(--transition-duration);
 }
+
 .icon-modal {
   width: 18px;
   height: 18px;
   fill: currentColor;
   align-items: center;
 }
+
 .close-modal:hover,
 .close-modal:focus {
-  color: var(--color-link)
+  color: var(--color-link);
 }
